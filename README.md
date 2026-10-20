@@ -23,8 +23,8 @@ Buka `http://127.0.0.1:5000/tasks` (atau port 5001 jika port 5000 bentrok).
 |--------|----------|--------|
 | GET | /tasks | Daftar semua tugas |
 | POST | /tasks | Tambah tugas (`{"title": "..."}`) |
-| PUT | /tasks/<id>/done | Tandai selesai |
-| DELETE | /tasks/<id> | Hapus tugas |
+| PUT | /tasks/{id}/done | Tandai selesai |
+| DELETE | /tasks/{id} | Hapus tugas |
 
 ## 4. Overview Pipeline CI/CD
 Pipeline memakai **GitHub Actions** (`.github/workflows/devsecops.yml`), terpicu pada `push` dan `pull_request` ke branch `main`.
